@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <title>REGISTRO</title>
+</head>
+<body>
+    
+    
+    <form action="" class="formulario-1">
+        <center><h1>REGISTRATE</h1></center>
+        <br>
+        <div class="formulario">
+            <div>
+                <label for="inputNombre" class="titulos"> Nombre: </label>
+                <input type="text" id="inputNombre" name="inputNombre" required class="text">
+            </div>
+            <div>
+                <label for="inputNombre"> Apellidos: </label>
+                <input type="text" id="inputApellidos" name="inputApellidos" required class="text">
+            </div>
+            <!-- input de tipo radio para definir el "Sexo de la persona"-->
+            <div>
+                <label> Sexo: </label>    
+                <label for="radioF" style="display: inline-block; width: 5%;"> F </label>
+                <input type="radio" name="radioSexo" id="radioF" value="F" style="margin-right: 10px;">
+                <label for="radioM" style="display: inline-block; width: 5%;"> M </label>
+                <input type="radio" name="radioSexo" id="radioM" value="M">
+            </div>
+            <div>
+                <label for="" class="titulos"> Contraseña </label>
+                <input type="password" id="pwd" class="text">
+            </div>
+            <div>
+                <label for="inputFN"> Fecha de Nacimiento: </label>
+                <input type="date" id="inputFN" name="inputFN" min="1980-01-01" max="2000-12-31" class="text">
+            </div>
+            <!-- input de tipo "date"-->
+            <!-- input de tipo "@" -->
+            <div>
+                <label for="inputEmail" class="titulos"> Email </label>
+                <input type="email" id="inputEmail" name="inputEmail" required autocomplete="on" class="text">
+            </div>
+            <!-- input de tipo falla "file"-->
+            <div>
+                <label for="inputFoto" class="titulos"> Foto </label>
+                <input type="file" id="inputFoto" name="inputFoto">
+            </div>
+            <!-- input de tipo "tel"-->
+            <div>
+                <label for="inputTelefono" class="titulos"> Numero Telefonico: </label>
+                <input type="tel" name="inputTelefono" id="inputTelefono"
+                placeholder="+xx-xxx-xxx-xxxx" pattern="[+][0-9]{2}-[0-9]{3}-[0-9]{3}-[0-9]{4}" value="+57"
+                title="formato +xx-xxx-xxx-xxxx" class="text">    
+            </div>
+        </div>
+        
+        <br>
+        <!-- input de tipo "submit"-->
+        <center><input type="submit" value="Registrar" id="btRegistrar" class="enviar"></center>
+    </form>
+    <a href="/index.html">Clinica Jaller</a>
+</body>
+</html>
